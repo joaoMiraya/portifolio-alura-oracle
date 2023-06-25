@@ -1,0 +1,161 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --white-color: #FFF;
+  --btn-blue-primary: #2A7AE4;
+  --btn-blue-hover: #5595E9;
+  --btn-secondary-hover: #D4E4FA;
+}
+
+/* BUTTONS STYLE */
+.btn-primary {
+  background-color: var(--btn-blue-primary);
+  border: none;
+  color: #FFF;
+  transition: .4s ease;
+  min-height: 51px;
+  min-width: 150px;
+  padding: 1rem;
+  text-align: center;
+}
+
+.btn-primary:hover {
+  background-color: var(--btn-blue-hover);
+}
+
+.btn-secondary {
+  background-color: transparent;
+  border: var(--btn-blue-hover) solid 1px;
+  color: var(--btn-blue-hover);
+  transition: .4s ease;
+  min-height: 51px;
+  padding: 1rem 2rem;
+  text-align: center;
+}
+
+.btn-secondary:hover {
+  background-color: var(--btn-secondary-hover);
+}
+
+.btn-primary-mobile {
+  background-color: var(--btn-blue-primary);
+  border: none;
+  color: #FFF;
+  transition: .4s ease;
+  min-height: 51px;
+  padding: 1rem;
+  text-align: center;
+}
+
+.btn-primary-mobile:hover {
+  background-color: var(--btn-blue-hover);
+}
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  color: #3f3f3f;
+  background-color: #ececec;
+}
+.containerr {
+  margin: 0;
+  padding: 1rem;
+}
+
+@media (min-width:768px) {
+  .containerr {
+    margin: 0;
+    padding: 0 2rem;
+  }
+}
+
+@media (min-width:1150px) {
+  .containerr {
+    margin: 0;
+    padding: 4rem;
+  }
+}
+/* ANIMAÇÃO TEXTO HOME */
+
+#titleAnimation::after {
+  content: '|';
+  animation: titleAnima 1s infinite ease-in-out;
+  color: #3f3f3f;
+}
+
+@keyframes titleAnima {
+  0% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0;
+  }
+}
+
+.textAnimate {
+  animation: textAnimate ease-in 6s;
+}
+
+@keyframes textAnimate {
+  0% {
+    opacity: 0;
+    position: relative;
+    top: 100%;
+  }
+
+  50% {
+    opacity: 0;
+    position: relative;
+    top: 50%;
+  }
+
+  100% {
+    opacity: 1;
+    position: relative;
+    top: 0;
+  }
+}
+/* FIM ANIMAÇÃO TEXTO HOME */
+
+.commum-box {
+  background-color: #FFF;
+  color: var(--btn-blue-primary);
+  padding: 1.5rem;
+  min-width: 150px;
+  min-height: 150px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 12px;
+  box-shadow: 5px 5px 5px #00000020;
+  transition: .5s ease;
+}
+
+.commum-box:hover {
+  transform: translateY(-15px);
+}
+
+.formacoes div {
+  background-color: #fff;
+  min-width: 250px;
+  min-height: 250px;
+  display: flex;
+  justify-content: center;
+}
+
+.border-focus {
+border-bottom: 3px inset var(--btn-blue-primary);
+}
+.label-focus{
+  color: var(--btn-blue-primary);
+}
