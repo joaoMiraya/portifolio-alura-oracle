@@ -106,6 +106,7 @@ function Contato() {
                             name='nome'
                             id='nome'
                             type="text"
+                            required
                         />
 
                         <label ref={refEmailLabel} className='text-[10px] relative top-4 left-2 z-10 text-gray-400' htmlFor="email">Email</label>
@@ -119,6 +120,7 @@ function Contato() {
                             name='email'
                             id='email'
                             type="email"
+                            required
                         />
 
                         <label ref={refAssuntoLabel} className='text-[10px] relative top-4 left-2 z-10 text-gray-400' htmlFor="assunto">Assunto</label>
@@ -132,6 +134,7 @@ function Contato() {
                             name='assunto'
                             id='assunto'
                             type="text"
+                            required
                         />
 
                         <label ref={refMensagemLabel} className='text-[10px] relative top-4 left-2 z-10 text-gray-400' htmlFor="mensagem">Mensagem</label>
@@ -144,6 +147,7 @@ function Contato() {
                             className='outline-none pt-4 pl-2'
                             name="mensagem"
                             id='mensagem'
+                            required
                             cols="30"
                             rows="05">
                         </textarea>
