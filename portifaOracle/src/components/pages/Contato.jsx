@@ -94,7 +94,7 @@ function Contato() {
                         <p className=' text-sm'>Quer entrar em contato comigo? <br />
                             Preencha o formulário ao lado e entrarei em contato o mais rápido possível.</p>
                     </div>
-                    <div className='flex flex-col px-6 '>
+                    <div className='flex flex-col w-4/5 md:w-full '>
                         <label ref={refNameLabel} className='text-[10px] relative top-4 left-2 z-10 text-gray-400' htmlFor="nome">Nome</label>
                         <input
                             ref={refName}
