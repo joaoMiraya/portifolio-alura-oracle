@@ -89,7 +89,7 @@ function Contato() {
             <div className="containerr flex justify-center gap-2">
                 <img className='hidden md:flex w-72 object-cover' src={contatoimg} alt="Entre em contato" />
                 <form ref={form} onSubmit={sendEmail}>
-                    <div className='flex flex-col gap-2 mb-4'>
+                    <div className='flex flex-col gap-2 w-4/5 md:w-full mb-4'>
                         <h2 className='font-semibold text-2xl'>Contato</h2>
                         <p className=' text-sm'>Quer entrar em contato comigo? <br />
                             Preencha o formulário ao lado e entrarei em contato o mais rápido possível.</p>
