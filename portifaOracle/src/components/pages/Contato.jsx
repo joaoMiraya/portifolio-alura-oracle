@@ -85,7 +85,7 @@ function Contato() {
 
     return (
 
-        <section className='bg-[#D4E4FA] mt-4 px-4'>
+        <section className='bg-[#D4E4FA] mt-4 px-6'>
             <div className="containerr flex justify-center gap-2">
                 <img className='hidden md:flex w-72 object-cover' src={contatoimg} alt="Entre em contato" />
                 <form ref={form} onSubmit={sendEmail}>
@@ -94,7 +94,7 @@ function Contato() {
                         <p className=' text-sm'>Quer entrar em contato comigo? <br />
                             Preencha o formulário ao lado e entrarei em contato o mais rápido possível.</p>
                     </div>
-                    <div className='flex flex-col '>
+                    <div className='flex flex-col px-6 '>
                         <label ref={refNameLabel} className='text-[10px] relative top-4 left-2 z-10 text-gray-400' htmlFor="nome">Nome</label>
                         <input
                             ref={refName}
@@ -102,7 +102,7 @@ function Contato() {
                             onBlur={handleBlurName}
                             value={nome}
                             onChange={(e) => setNome(e.target.value)}
-                            className=' rounded-sm p-2 pt-4 outline-none h-10 relative'
+                            className=' rounded-sm px-2 pt-4 outline-none h-10 relative'
                             name='nome'
                             id='nome'
                             type="text"
@@ -115,7 +115,7 @@ function Contato() {
                             onBlur={handleBlurEmail}
                             value={email}
                             onChange={(e) => setEmail(e.target.value)}
-                            className='rounded-sm p-2 pt-4 outline-none h-10'
+                            className='rounded-sm px-2 pt-4 outline-none h-10'
                             name='email'
                             id='email'
                             type="email"
@@ -128,7 +128,7 @@ function Contato() {
                             onBlur={handleBlurAssunto}
                             value={assunto}
                             onChange={(e) => setAssunto(e.target.value)}
-                            className='rounded-sm p-2 pt-4 outline-none h-10'
+                            className='rounded-sm px-2 pt-4 outline-none h-10'
                             name='assunto'
                             id='assunto'
                             type="text"
