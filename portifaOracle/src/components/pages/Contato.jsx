@@ -85,7 +85,7 @@ function Contato() {
 
     return (
 
-        <section className='bg-[#D4E4FA] mt-4'>
+        <section className='bg-[#D4E4FA] mt-4 px-4'>
             <div className="containerr flex justify-center gap-2">
                 <img className='hidden md:flex w-72 object-cover' src={contatoimg} alt="Entre em contato" />
                 <form ref={form} onSubmit={sendEmail}>
@@ -94,7 +94,7 @@ function Contato() {
                         <p className=' text-sm'>Quer entrar em contato comigo? <br />
                             Preencha o formulário ao lado e entrarei em contato o mais rápido possível.</p>
                     </div>
-                    <div className='flex flex-col px-4 md:w-full '>
+                    <div className='flex flex-col '>
                         <label ref={refNameLabel} className='text-[10px] relative top-4 left-2 z-10 text-gray-400' htmlFor="nome">Nome</label>
                         <input
                             ref={refName}
@@ -148,7 +148,7 @@ function Contato() {
                             rows="05">
                         </textarea>
                     </div>
-                    <button className='btn-primary-mobile ml-4 mt-4'>Enviar mensagem</button>
+                    <button className='btn-primary-mobile mt-4'>Enviar mensagem</button>
                 </form>
             </div>
         </section>
